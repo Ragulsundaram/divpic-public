@@ -1,0 +1,38 @@
+name: Looks off in Figma
+description: The page landed in Figma but doesn't match the website.
+labels: [figma]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The public page you copied into Figma.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks different?
+      description: Which part, and how it differs (missing image, wrong font, broken layout, odd spacing...).
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: One of the website and one of the same part in Figma.
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Arc
+        - Edge
+        - Brave
+        - Firefox
+        - Safari
+        - Other

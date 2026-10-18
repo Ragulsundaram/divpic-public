@@ -1,0 +1,16 @@
+name: Idea
+description: Something DivPic should do.
+labels: [idea]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you'd like DivPic to handle it, if you have a picture of it.

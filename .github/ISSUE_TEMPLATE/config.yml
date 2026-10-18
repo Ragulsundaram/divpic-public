@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help and FAQ
+    url: https://divpic.in/support
+    about: Setup steps and answers to common questions.
+  - name: Privacy questions
+    url: https://divpic.in/privacy
+    about: What DivPic reads and stores, and how to delete your account.

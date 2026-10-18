@@ -1,0 +1,53 @@
+name: Bug
+description: Something broke, or DivPic did nothing.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The page you were capturing, if it's public.
+      placeholder: https://example.com/pricing
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Arc
+        - Edge
+        - Brave
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: What were you doing?
+      options:
+        - Capturing one element
+        - Capturing a full page
+        - Saving as SVG
+        - Copying into Figma
+        - Signing in
+        - Something else
+  - type: input
+    id: version
+    attributes:
+      label: DivPic version
+      description: Shown in your browser's extensions page.
+      placeholder: "4.3"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images in here. Leave out anything private.
